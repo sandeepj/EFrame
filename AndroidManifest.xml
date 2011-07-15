@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.EFrame13"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".EFrame13"
+                  android:label="@string/app_name" 
+                  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+     <activity android:name=".ModeListView" android:screenOrientation="portrait"
+    			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+        
+        <activity android:name=".add_album" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+        <activity android:name=".RegisterMember" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+        <activity android:name=".SdCardPhotos" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+        <activity android:name=".OpenAlbum" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+        <activity android:name=".SlideShow" android:screenOrientation="landscape"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+        
+        <activity android:name=".FullPhoto" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+        
+        <activity android:name=".FullPhotoEdit" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+        <activity android:name=".updatePhotoDetails" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+        
+        <activity android:name=".EditPhotoDetails" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+        <activity android:name=".addPhotosOpenAlbum" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+        
+        <activity android:name=".DeletePhotosFromAlbum" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+        <activity android:name=".EditPhotoOpenAlbum" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+         <activity android:name=".home" android:screenOrientation="portrait"
+         			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+		 <activity android:name=".SendMail" android:screenOrientation="portrait"
+		 		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+		 	
+        </activity>
+        
+        <activity android:name=".Settings" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+        
+        <activity android:name=".CamAlbumList" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+        <activity android:name=".add_album_cam" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+        
+        <activity android:name=".CamMode" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        		>
+            
+        </activity>
+        
+        <activity android:name=".DeleteAlbums" android:screenOrientation="portrait"
+        			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        
+            
+        </activity>
+        
+        <activity android:name=".FullPhotoTag" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+          
+        </activity>
+        
+        <activity android:name=".FullPhotoTagEdit" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+           
+        </activity>
+        
+        <activity android:name=".FullPhotoNewAlbumTagEdit" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+        
+        <activity android:name=".FullPhotoNewAlbumTag" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+                     
+        <activity android:name=".MusicActivity" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+        <activity android:name=".EditAlbum" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+          
+        </activity>
+        
+        <activity android:name=".DownloadFromSite" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+       
+        <activity android:name=".SiteDownloadTemp" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+        <activity android:name=".image" android:screenOrientation="portrait"
+        		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            
+        </activity>
+        
+        <activity android:name=".InsertDBAndUpdate" android:screenOrientation="portrait"
+        			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+        </activity>
+        
+        <activity android:name=".UploadPhotosToSite" android:screenOrientation="portrait"
+        			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+           
+         </activity>
+         <meta-data android:value="a14c9f3421e00e5" android:name="ADMOB_PUBLISHER_ID" />
+    </application>
+    
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+<uses-feature android:name="android.hardware.camera" />
+ <uses-feature android:name="android.hardware.camera.autofocus" />
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+<uses-permission android:name="android.permission.SET_WALLPAPER" />
+<uses-permission android:name="android.permission.CAMERA" />  
+
+</manifest>

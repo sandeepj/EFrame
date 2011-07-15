@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	 	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:id="@+id/rLogin"
+        android:background="#ffffff"
+    	>
+    	
+    	<LinearLayout
+ 		android:id="@+id/l0"
+  		android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="center_vertical|center_horizontal"
+      	android:background="@drawable/header_p"
+      	>
+  
+  		<TextView
+  		android:text="Add New Album"
+  		android:typeface="serif"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:textColor="#ffffff"
+  		android:textStyle="bold"
+  		/>  	
+  		</LinearLayout>
+ 
+ 		<TextView
+  		android:layout_below="@id/l0"
+  		android:id="@+id/space"
+  		android:layout_width="wrap_content"
+  		android:layout_height="10px"
+  		/>  	 
+  		<TextView
+  		android:layout_below="@id/space"
+  		android:id="@+id/l1"
+  		android:paddingTop="10px"
+  		android:text="Album name: "
+  		android:typeface="serif"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:textColor="#000000"
+  		/>  	
+		<EditText
+		android:layout_below="@id/space"
+		android:layout_toRightOf="@id/l1"
+		android:layout_height="wrap_content" 
+		android:id="@+id/album_name" 
+		android:typeface="serif"
+		android:layout_width="fill_parent" 
+		/>  	  	
+      	
+      	<LinearLayout
+  	 	android:layout_below="@id/l1"
+  		android:id="@+id/l2"
+  		android:orientation="horizontal"
+  		android:paddingTop="20px"
+  		android:paddingBottom="20px"
+  		android:gravity="center_vertical|center_horizontal"
+       	android:layout_width="fill_parent"
+      	android:layout_height="wrap_content">
+			
+      	<Button
+        android:id="@+id/add_new_album"
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:typeface="serif"
+		android:text="  Add  "
+        android:drawableLeft="@drawable/add"
+        />
+        <Button
+        android:id="@+id/back"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:typeface="serif"
+		android:text="  Cancel  "
+        android:drawableLeft="@drawable/cancel" />
+        
+   		</LinearLayout>
+	
+	
+</RelativeLayout>

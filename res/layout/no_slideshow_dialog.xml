@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+      <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"
+       android:gravity="center">
+      
+       <TextView 
+       		android:paddingLeft="60px"
+			android:id="@+id/slideshowDialog"
+       		android:layout_width="wrap_content" 
+       		android:layout_height="wrap_content" />
+      
+      <LinearLayout
+      	android:layout_below="@id/slideshowDialog"
+  		android:id="@+id/buttonCapsule"
+  		android:orientation="horizontal"
+       	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+      	android:gravity="center_horizontal"
+      	android:paddingTop="20px"
+      	android:paddingBottom="20px"
+      	>
+       <Button 
+       		android:id="@+id/ok" 
+       		android:layout_width="wrap_content" 
+       		android:layout_height="wrap_content"
+       		android:text="OK" />
+       	</LinearLayout>	
+      </RelativeLayout>

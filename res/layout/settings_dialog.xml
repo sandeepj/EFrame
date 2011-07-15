@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    
+    >
+      <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:background="#ffffff">
+    
+    
+   
+ 
+	<LinearLayout
+		
+  	 	android:id="@+id/text"
+  	 	android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="center_vertical|center_horizontal"
+      	android:background="@drawable/header_p"
+      	>
+  
+		
+		<TextView
+  		android:id="@+id/text1"
+  		android:text="Settings"
+  		android:typeface="serif"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:textColor="#ffffff"
+  		android:textStyle="bold"
+  		/>
+ </LinearLayout>	
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l2"
+    android:layout_below="@id/text"
+    android:paddingTop="10px"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    > 
+    
+    <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      	<RadioButton android:id="@+id/enter_id"
+          	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+          	android:text="Enter Elite PictureFrame ID" 
+          	android:textColor="#000000"/>
+        <RadioButton android:id="@+id/photos_path"
+          	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+          	android:text="Photos storage Path" 
+          	android:textColor="#000000"/>
+      	<RadioButton android:id="@+id/register"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+          	android:text="Register" 
+          	android:textColor="#000000"/>
+    </RadioGroup>
+    
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l3"
+    android:layout_below="@id/l2"
+    android:paddingTop="10px"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    > 
+
+ <Button
+          android:id="@+id/ok"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+		  android:typeface="serif"
+		  android:text=" Cancel"
+          android:drawableLeft="@drawable/cancel"
+          />
+</LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

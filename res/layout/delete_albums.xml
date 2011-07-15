@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:background="#ffffff">
+ <LinearLayout
+  	 	android:id="@+id/text"
+  		android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:paddingLeft="10px"
+      	android:paddingTop="10px"
+       	android:background="@drawable/header_p">
+  
+  		
+  </LinearLayout>
+ 
+ <TextView
+  				android:id="@+id/t1"
+  				android:layout_width="wrap_content"
+  				android:layout_height="2px"
+  		  		/>  
+  		 <TextView
+  				android:id="@+id/t2"
+  				android:layout_width="10px"
+  				android:layout_height="wrap_content"
+  		  		/> 
+  		<Button
+  		  android:layout_below="@id/t1"
+  		  android:layout_toRightOf="@id/t2"
+          android:id="@+id/back"
+           android:textColor="#000000"
+		  android:typeface="serif"
+		  android:text=" Back"
+          android:drawableLeft="@drawable/back"
+       	  android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          
+          />
+		
+		<TextView
+  		android:id="@+id/text1"
+  		android:text="Select Albums"
+  		android:typeface="serif"
+  		android:textStyle="bold"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:paddingTop="15px"
+  		android:layout_centerHorizontal="true"
+  		android:textColor="#ffffff"
+  		/>  	
+		
+		<TextView
+  				android:id="@+id/t3"
+  				android:layout_width="wrap_content"
+  				android:layout_height="2px"
+  		  		/>  
+  		 <TextView
+  				android:id="@+id/t4"
+  				android:layout_alignParentRight="true"
+  				android:layout_width="10px"
+  				android:layout_height="wrap_content"
+  		  		/> 
+      	<Button
+          android:id="@+id/done"
+          android:layout_below="@id/t3"
+          android:layout_toLeftOf="@id/t4"
+       	  android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+		  android:typeface="serif"
+		  android:text=" Done"
+          android:drawableLeft="@drawable/done"/>
+ 
+ 
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/sdcard"
+    android:layout_below="@id/text"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:numColumns="1"
+    android:background="#ffffff"
+	/>
+	
+</RelativeLayout>

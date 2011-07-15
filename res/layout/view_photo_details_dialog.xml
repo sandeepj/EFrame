@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+      <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"
+       android:gravity="center">
+      
+      
+ 
+	<LinearLayout
+		
+  	 	android:id="@+id/text"
+  	 	android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="center_vertical|center_horizontal"
+      	>
+  
+		
+		<TextView
+  		android:id="@+id/text1"
+  		android:text="Photo Details"
+  		android:typeface="serif"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:textColor="#ffffff"
+  		/>
+ </LinearLayout>	
+   <LinearLayout
+		android:layout_below="@id/text"
+  	 	android:id="@+id/l1"
+  	 	android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="center_vertical|center_horizontal"
+      	>
+      
+       <TextView 
+       		android:id="@+id/viewDetailsDialog"
+       		android:paddingLeft="50px"
+       		android:gravity="center_vertical|center_horizontal"
+       		android:layout_width="wrap_content" 
+       		android:layout_height="wrap_content" />
+      </LinearLayout>
+      <LinearLayout
+      	android:layout_below="@id/l1"
+  		android:id="@+id/buttonCapsule"
+  		android:orientation="horizontal"
+       	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+      	android:gravity="center_horizontal"
+      	android:paddingTop="20px"
+      	android:paddingBottom="20px"
+      	>
+       <Button 
+       		android:id="@+id/ok" 
+       		android:layout_width="wrap_content" 
+       		android:layout_height="wrap_content"
+       		android:layout_centerHorizontal="true" 
+       		android:text="OK" />
+	<Button
+          android:id="@+id/cancel"
+       	  android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         
+          android:paddingRight="20px"
+          android:text="Cancel" 
+          />
+       	</LinearLayout>	
+      </RelativeLayout>

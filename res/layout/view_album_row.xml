@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/widget44"
+	android:layout_width="100px"
+	android:layout_height="100px"
+	android:orientation="vertical"
+	>
+	<!--<ImageButton
+    		android:id="@+id/icon_image"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		
+    		/>
+--><ImageView
+	android:id="@+id/icon_image"
+	android:layout_width="100px"
+	android:layout_height="100px"
+	android:paddingLeft="10px"
+	
+	>
+	</ImageView>
+<TextView
+	android:id="@+id/icon_text"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:paddingLeft="10px"
+	android:paddingBottom="10px"
+	android:textColor="#000000"
+	>
+	</TextView>
+</LinearLayout>

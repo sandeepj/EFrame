@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    
+    >
+
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:background="#ffffff"
+ >
+
+	
+	<LinearLayout
+  	 	android:id="@+id/text"
+  		android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:background="@drawable/header_p"
+      	android:gravity="center_vertical|center_horizontal"
+      	>
+  
+  		<TextView
+  			android:text="Edit Album"
+  			android:typeface="serif"
+  			android:textColor="#ffffff"
+  			android:textStyle="bold"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			
+  			/>  	
+  </LinearLayout>
+	
+	<TextView
+  		android:layout_below="@id/text"
+  		android:id="@+id/space"
+  		android:layout_width="wrap_content"
+  		android:layout_height="10px"
+  		
+  		/>  	 
+	
+ 				<TextView
+ 					android:layout_below="@id/space"
+ 					android:id="@+id/t1"
+ 					android:paddingTop="10px"
+ 					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:text="Album Name: " 
+					/>
+				<EditText 
+					android:layout_below="@id/space"
+					android:layout_toRightOf="@id/t1"
+					android:layout_height="wrap_content" 
+					android:id="@+id/aname" 
+					android:typeface="serif"
+					android:layout_width="fill_parent" 
+					
+					/>
+ 	
+ 	
+ 				<TextView
+ 					android:layout_below="@id/aname"
+ 					android:id="@+id/t2"
+ 					android:paddingTop="10px"
+ 					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:text="Album_music: " 
+					/>
+				<EditText 
+					android:layout_below="@id/aname"
+					android:layout_toRightOf="@id/t2"
+					android:layout_height="wrap_content" 
+					android:id="@+id/music" 
+					android:typeface="serif"
+					android:layout_width="fill_parent" 
+					android:editable="false"
+					/>
+					
+ 	
+    
+ 			<Button 
+ 					android:layout_below="@id/music"
+					android:layout_toRightOf="@id/t2"
+ 					android:id="@+id/change" 
+ 					android:layout_width="wrap_content" 
+            		android:layout_height="wrap_content" 
+                    android:textColor="#000000"
+		  			android:typeface="serif"
+		  			android:text="  Change  "
+          			android:drawableLeft="@drawable/change"  />
+ 
+ 	
+ 				<TextView
+ 					android:layout_below="@id/change"
+ 					android:id="@+id/t4"
+ 					android:paddingTop="10px"
+ 					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textStyle="bold"
+					android:gravity="center_vertical|center_horizontal"
+					android:textColor="#000000"
+					android:text="Transition: " 
+					/>
+				<Spinner
+					android:layout_below="@id/change"
+					android:layout_toRightOf="@id/t4"
+ 					android:id="@+id/test"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:drawSelectorOnTop="false"/>
+ 			
+ 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l4"
+    android:paddingTop="10px"
+    android:layout_below="@id/test"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+ 			<Button android:id="@+id/edit_button" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:textColor="#000000"
+		  android:typeface="serif"
+		  android:text=" Done"
+          android:drawableLeft="@drawable/done" />
+          
+            <Button
+          android:id="@+id/cancel"
+       	  android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+		  android:typeface="serif"
+		  android:text="  Cancel  "
+          android:drawableLeft="@drawable/cancel" />
+            
+</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l5"
+    android:paddingTop="10px"
+    android:layout_below="@id/l4"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+				<TextView
+					android:id="@+id/text1"
+ 					android:paddingTop="10px"
+ 					android:paddingLeft="100px"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:text="" 
+					/>
+					</LinearLayout>
+</RelativeLayout>
+</ScrollView>

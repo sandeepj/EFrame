@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent">
+
+
+
+		<TextView
+  				android:id="@+id/t1"
+  				android:layout_width="wrap_content"
+  				android:layout_height="10px"
+  		  		/>  
+  		 <TextView
+  				android:id="@+id/t2"
+  				android:layout_width="10px"
+  				android:layout_height="wrap_content"
+  		  		/> 
+  		<Button
+  		  android:layout_below="@id/t1"
+  		  android:layout_toRightOf="@id/t2"
+          android:id="@+id/back"
+          android:visibility="gone"
+          android:textColor="#000000"
+          android:text="  Back"
+          android:typeface="serif"
+          android:drawableLeft="@drawable/back"
+       	  android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          
+          />
+		
+		<TextView
+  				android:id="@+id/t3"
+  				android:layout_width="wrap_content"
+  				android:layout_height="10px"
+  		  		/>  
+  		 <TextView
+  				android:id="@+id/t4"
+  				android:layout_alignParentRight="true"
+  				android:layout_width="10px"
+  				android:layout_height="wrap_content"
+  		  		/> 
+      	<Button
+          android:id="@+id/mailToFriend"
+          android:layout_below="@id/t3"
+          android:layout_toLeftOf="@id/t4"
+          android:visibility="gone"
+       	  android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Mail to Friend"
+          android:typeface="serif"
+          android:textColor="#000000"
+          android:drawableTop="@drawable/mail_fren"/>
+		
+<ImageView  
+    android:id="@+id/image_view"
+    android:layout_below="@id/mailToFriend"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    />
+
+
+<LinearLayout
+  	android:id="@+id/buttonCapsule"
+  	android:orientation="horizontal"
+       android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:layout_alignParentBottom="true"
+     >
+
+
+		<Button 
+		android:textColor="#000000"
+		android:typeface="serif"
+			android:text="  View  "
+			android:drawableTop="@drawable/view_d"
+			android:id="@+id/viewDetails" 
+			android:visibility="gone"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		</Button>
+		
+		
+		
+		<Button
+			android:textColor="#000000"
+			android:typeface="serif"
+			android:text="  Edit  "
+          	android:drawableTop="@drawable/edit_d"
+			android:id="@+id/editDetails" 
+			android:visibility="gone"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		</Button>	
+		
+		<Button 
+			android:textColor="#000000"
+			android:typeface="serif"
+			android:text="Wallpaper"
+          	android:drawableTop="@drawable/set_wallpaper"
+			android:id="@+id/setAsWallpaper" 
+			android:visibility="gone"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		</Button>		
+
+ </LinearLayout>
+
+
+</RelativeLayout>

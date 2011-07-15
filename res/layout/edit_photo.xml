@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    
+    >
+
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:background="#ffffff"
+ >
+  
+ 
+	<LinearLayout
+		
+  	 	android:id="@+id/text"
+  		android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="center_vertical|center_horizontal"
+      	android:background="@drawable/header_p"
+      	>
+  
+		
+		<TextView
+  		android:id="@+id/text1"
+  		android:text="Edit Photo"
+  		android:typeface="serif"
+  		android:textStyle="bold"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:textColor="#ffffff"
+  		/>
+ </LinearLayout>	
+    		
+	<TextView
+  		android:layout_below="@id/text"
+  		android:id="@+id/space"
+  		android:layout_width="wrap_content"
+  		android:layout_height="10px"
+  		
+  		/>  	
+ 				<TextView
+ 					android:layout_below="@id/space"
+  					android:id="@+id/l1"
+  					android:paddingTop="10px"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textColor="#000000"
+					
+					android:text="Photo Location: " 
+					/>
+				<TextView 
+					android:layout_below="@id/space"
+					android:layout_toRightOf="@id/l1"
+					android:layout_height="wrap_content" 
+					android:id="@+id/photo_loc" 
+					android:typeface="serif"
+					android:textColor="#000000"
+					android:layout_width="wrap_content" 
+					/>
+ 			
+ 	
+    
+    
+    
+ 				<TextView
+ 					android:id="@+id/l2"
+    				android:layout_below="@id/photo_loc"				
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					
+					android:textColor="#000000"
+					android:text="Clicked On: " 
+					/>
+				<EditText 
+					android:layout_below="@id/photo_loc"
+					android:layout_height="wrap_content" 
+					android:id="@+id/clicked_on" 
+					android:layout_toRightOf="@id/l2"
+					android:typeface="serif"
+					android:layout_width="fill_parent" 
+					
+					/>
+ 			
+ 	
+ 				<TextView
+ 					android:id="@+id/l3"
+    				android:paddingTop="10px"
+    				android:layout_below="@id/clicked_on"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textColor="#000000"
+					android:text="Country: " 
+					/>
+				<EditText 
+					android:layout_below="@id/clicked_on"
+					android:layout_toRightOf="@id/l3"
+					android:layout_height="wrap_content" 
+					android:id="@+id/country" 
+					android:typeface="serif"
+					android:layout_width="fill_parent" 
+					
+					/>
+ 			
+ 	
+ 				<TextView
+ 					android:id="@+id/l4"
+ 					android:paddingTop="10px"
+    				android:layout_below="@id/country"				
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textColor="#000000"
+					android:text="State: " 
+					/>
+				<EditText 
+					android:layout_height="wrap_content" 
+					android:id="@+id/state" 
+					android:layout_toRightOf="@id/l4"
+					android:layout_below="@id/country"
+					android:typeface="serif"
+					android:layout_width="fill_parent"
+					
+					/>
+ 	
+ 	
+ 			
+ 				<TextView
+ 					android:id="@+id/l5"
+    				android:paddingTop="10px"
+    				android:layout_below="@id/state"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textColor="#000000"
+					android:text="City: " 
+					/>
+				<EditText 
+					android:layout_below="@id/state"
+					android:layout_toRightOf="@id/l5"
+					android:layout_height="wrap_content" 
+					android:id="@+id/city" 
+					android:typeface="serif"
+					android:layout_width="fill_parent"
+					
+					/>
+ 			
+ 	 			
+ 			<TextView
+ 					android:id="@+id/l6"
+    				android:paddingTop="10px"
+    				android:layout_below="@id/city"
+ 					android:paddingBottom="10px"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textColor="#000000"
+					android:text="Area: " 
+					/>
+				<EditText
+					android:layout_below="@id/city"
+					android:layout_toRightOf="@id/l6" 
+					android:layout_height="wrap_content" 
+					android:id="@+id/area" 
+					android:typeface="serif"
+					android:layout_width="fill_parent"
+					
+					/>
+ 			
+ 	
+ 				<TextView
+ 					android:id="@+id/l7"
+    				android:paddingTop="10px"
+    				android:layout_below="@id/area"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textColor="#000000"
+					android:text="Place: " 
+					/>
+				<EditText 
+					android:layout_height="wrap_content" 
+					android:id="@+id/place" 
+					android:layout_below="@id/area"
+					android:layout_toRightOf="@id/l7" 
+					android:typeface="serif"
+					android:layout_width="fill_parent"
+					
+					/>
+ 			
+ 			
+ 				<TextView
+ 					android:id="@+id/l8"
+    				android:paddingTop="10px"
+    				android:layout_below="@id/place"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textColor="#000000"
+					android:text="Tag: " 
+					/>
+				<EditText 
+					android:layout_height="wrap_content" 
+					android:id="@+id/tag" 
+					android:layout_below="@id/place"
+					android:layout_toRightOf="@id/l8" 
+					android:typeface="serif"
+					android:layout_width="fill_parent"
+					
+					/>
+ 			
+ 			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l10"
+    android:paddingTop="10px"
+    android:layout_below="@id/tag"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+			<Button android:id="@+id/edit_button" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:textColor="#000000"
+		  android:typeface="serif"
+		  android:text=" Done"
+          android:drawableLeft="@drawable/done" />
+	<Button
+          android:id="@+id/cancel"
+       	  android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:textColor="#000000"
+		  android:typeface="serif"
+		  android:text="  Cancel  "
+          android:drawableLeft="@drawable/cancel"
+          />
+            
+            
+  	</LinearLayout>
+</RelativeLayout>
+</ScrollView>

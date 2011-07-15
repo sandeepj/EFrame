@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    
+    >
+<RelativeLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:id="@+id/rLogin"
+        android:padding="5px"
+        
+    	>
+
+	<TextView  
+		android:id="@+id/wel"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:gravity="center_vertical|center_horizontal"
+    	android:textColor="#000000"
+    	android:textSize="10px"
+   	 	android:text="Welcome To Elite PictureFrame!!"
+    	/>
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:orientation="horizontal"
+    		android:layout_below="@id/wel"
+    		android:id="@+id/l0"
+    		android:paddingTop="10px"
+    		android:gravity="right"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		>
+    	<Button 
+			android:id="@+id/back" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:textColor="#000000"
+          android:text="  Back"
+          android:typeface="serif"
+          android:drawableLeft="@drawable/back"
+			android:gravity="center_vertical|center_horizontal"
+			/> 
+		
+	</LinearLayout>
+    	<TextView  
+		android:id="@+id/lo"
+		android:layout_below="@id/l0"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:textSize="20px"
+    	android:typeface="serif"
+    	
+    	android:gravity="center_vertical|center_horizontal"
+    	android:textColor="#000000"
+    	android:text="REGISTRATION"
+    	/>
+   
+   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l1"
+    android:paddingTop="20px"
+    android:layout_below="@id/lo"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+   
+   		<TextView
+ 					
+					android:id="@+id/t1" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textColor="#000000"
+					android:textStyle="bold"
+					android:text="     First Name: " 
+					/>
+		<EditText 
+					
+					
+					android:id="@+id/fname" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_width="150px" 
+					android:layout_height="wrap_content"
+					/>			
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l2"
+    android:paddingTop="10px"
+    android:layout_below="@id/l1"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView 
+					android:id="@+id/t2" 
+					android:layout_below="@id/t1"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="  Middle Name: "
+					/>
+				<EditText 
+					android:id="@+id/mname" 
+					android:layout_toRightOf="@id/t2" 
+					android:layout_width="150px" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_height="wrap_content" 
+									
+					/>
+    </LinearLayout>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l31"
+    android:paddingTop="10px"
+    android:layout_below="@id/l2"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView 
+					android:id="@+id/t2" 
+					android:layout_below="@id/t1"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="      Last Name: "
+					/>
+				<EditText 
+					android:id="@+id/lname" 
+					android:layout_toRightOf="@id/t2" 
+					android:layout_width="150px" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_height="wrap_content" 
+									
+					/>
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l3"
+    android:paddingTop="10px"
+    android:layout_below="@id/l31"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView 
+					android:id="@+id/t2" 
+					android:layout_below="@id/t1"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="Birth Date: "
+					/>
+
+     <TextView android:id="@+id/dateDisplay" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:typeface="serif"
+        android:textColor="#000000"
+        
+        />
+        <ImageButton
+    		android:id="@+id/changeDate"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/calendar4"
+    		android:background="#ffffff"
+    		/>
+    		<TextView 
+					android:layout_width="25px" 
+					android:layout_height="wrap_content"
+					/>
+    </LinearLayout>
+    
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l41"
+    android:paddingTop="10px"
+    android:layout_below="@id/l3"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView 
+					android:id="@+id/t2" 
+					
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="PhoneNumber: "
+					/>
+				<EditText 
+					android:id="@+id/phno" 
+					android:phoneNumber="true"
+					android:layout_width="150px" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_height="wrap_content" 
+									
+					/>
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l4"
+    android:paddingTop="10px"
+    android:layout_below="@id/l41"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView 
+					android:id="@+id/t2" 
+					
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="Re-enter PhoneNumber: "
+					/>
+				<EditText 
+					android:id="@+id/phno1" 
+					android:phoneNumber="true"
+					android:layout_width="150px" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_height="wrap_content" 
+									
+					/>
+					<TextView 
+					android:layout_width="65px" 
+					android:layout_height="wrap_content"
+					/>
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l51"
+    android:paddingTop="10px"
+    android:layout_below="@id/l4"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView 
+					android:id="@+id/t2" 
+					
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="          Email ID: "
+					/>
+				<EditText 
+					android:id="@+id/email" 
+					android:layout_width="150px" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_height="wrap_content" 
+									
+					/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l5"
+    android:paddingTop="10px"
+    android:layout_below="@id/l51"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    			<TextView 
+					android:id="@+id/t2" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="Re-enter Email ID: "
+					/>
+				<EditText 
+					android:id="@+id/email1" 
+					android:layout_width="150px" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_height="wrap_content" 
+									
+					/>
+					<TextView 
+					android:layout_width="20px" 
+					android:layout_height="wrap_content"
+					/>
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l222"
+    android:paddingTop="10px"
+    android:layout_below="@id/l5"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView 
+					android:layout_width="35px" 
+					android:layout_height="wrap_content"
+					/>
+    
+    <TextView 
+					android:id="@+id/t2" 
+					android:layout_below="@id/t1"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="Password: "
+					/>
+				<EditText 
+					android:id="@+id/pwd" 
+					android:layout_toRightOf="@id/t2" 
+					android:layout_width="150px" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_height="wrap_content" 
+					android:password="true" 
+					
+					/>
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l22"
+    android:paddingTop="10px"
+    android:layout_below="@id/l222"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView 
+					android:id="@+id/t2" 
+					android:layout_below="@id/t1"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="Re-enter Password: "
+					/>
+				<EditText 
+					android:id="@+id/pwd1" 
+					android:layout_toRightOf="@id/t2" 
+					android:layout_width="150px" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_height="wrap_content" 
+					android:password="true" 
+					
+					/>
+					<TextView 
+					android:layout_width="30px" 
+					android:layout_height="wrap_content"
+					/>
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l52"
+    android:paddingTop="10px"
+    android:layout_below="@id/l22"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    	<TextView 
+					android:id="@+id/t3" 
+					
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="Elite PictureFrame ID: "
+					/>
+				<EditText 
+					android:id="@+id/epfid" 
+					android:layout_width="150px" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_height="wrap_content" 
+									
+					/>
+					<TextView 
+					android:layout_width="45px" 
+					android:layout_height="wrap_content"
+					/>
+										
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l55"
+    android:paddingTop="5px"
+    android:layout_below="@id/l52"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    	
+					<TextView 
+					android:layout_width="100px" 
+					android:layout_height="wrap_content"
+					/>
+					<TextView 
+					android:id="@+id/t4" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:layout_gravity="center"
+					android:text=" @elitepictureframe.com"
+					/>
+					
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l53"
+    android:paddingTop="10px"
+    android:layout_below="@id/l55"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    		<TextView 
+					android:id="@+id/validity" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:text="                    "
+					/>
+					
+					 
+    		<Button 
+				android:id="@+id/checkValidity" 
+				android:layout_below="@id/t2"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:text="Check Availability"
+				/> 
+					
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l7"
+    android:paddingTop="10px"
+    android:layout_below="@id/l53"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    	<TextView 
+					android:layout_width="40px" 
+					android:layout_height="wrap_content"
+					/>
+    <TextView 
+					android:id="@+id/t2" 
+					
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="Gender: "
+					/>
+	<RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      	<RadioButton android:id="@+id/male"
+          	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:checked="true"
+         	
+          	android:text="Male" 
+          	android:textColor="#000000"/>
+      	<RadioButton android:id="@+id/female"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+          	
+          	android:text="Female" 
+          	android:textColor="#000000"/>
+        
+    </RadioGroup>
+    </LinearLayout>
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l8"
+    android:layout_below="@id/l7"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <Button 
+				android:id="@+id/register" 
+				android:layout_below="@id/t2"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:background="@drawable/register"
+				/> 
+			<Button 
+				android:id="@+id/reset" 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:background="@drawable/reset"
+				/> 
+    </LinearLayout>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l9"
+    android:paddingTop="10px"
+    android:layout_below="@id/l8"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TextView
+		android:id="@+id/text1" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textStyle="bold"
+		android:layout_gravity="center"
+		android:textColor="#FF0000"
+		android:text="" 
+		/>
+		</LinearLayout>
+   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l10"
+    android:paddingTop="10px"
+    android:layout_below="@id/l8"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TextView
+		android:id="@+id/text2" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textStyle="bold"
+		android:layout_gravity="center"
+		android:textColor="#6666FF"
+		android:text="" 
+		/>
+		</LinearLayout>
+   
+</RelativeLayout>
+</ScrollView>

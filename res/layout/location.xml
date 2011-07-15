@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:background="#ffffff">
+    
+ <ImageView  
+ 	android:id="@+id/main"
+    android:src="@drawable/first_screen"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    />   
+    
+    -->
+  <RelativeLayout 
+	 	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:id="@+id/rLogin"
+        android:padding="5px"
+    	android:background="@drawable/main_v"
+    	>
+    
+    
+    
+    <LinearLayout
+  		android:id="@+id/buttonCapsule1"
+  		android:orientation="horizontal"
+       	android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="center_horizontal"
+      	android:layout_above="@id/buttonCapsule"
+      	>
+      	<Button 
+				android:id="@+id/from_pc" 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:background="@drawable/downloadpc"
+				
+			/>
+      	<TextView 
+			android:layout_width="20px" 
+			android:layout_height="wrap_content">
+		</TextView>
+		<Button 
+				android:id="@+id/view_album_mode" 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:background="@drawable/myalbums"
+				
+			/>
+			<TextView 
+			android:layout_width="20px" 
+			android:layout_height="wrap_content">
+		</TextView>
+		<Button 
+				android:id="@+id/update_photo_details" 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:background="@drawable/updetails"
+				
+			/>
+			<TextView 
+			android:layout_width="20px" 
+			android:layout_height="wrap_content">
+		</TextView>
+		<Button 
+				android:id="@+id/setting"
+				android:background="@drawable/settings"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				
+				/>
+      	</LinearLayout>
+    
+    <LinearLayout
+  		android:id="@+id/buttonCapsule"
+  		android:orientation="horizontal"
+       	android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="center_horizontal"
+      	android:layout_alignParentBottom="true"
+      	android:paddingBottom="10px">
+
+		<Button 
+			android:id="@+id/upload_to_pc" 
+			android:background="@drawable/uploadpc"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			>
+		</Button>
+				
+		
+		<TextView 
+			android:layout_width="20px" 
+			android:layout_height="wrap_content">
+		</TextView>
+		<Button 
+			android:id="@+id/cam_mode" 
+			android:background="@drawable/camera"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			>
+		</Button>
+				
+		
+		<TextView 
+			android:layout_width="20px" 
+			android:layout_height="wrap_content">
+		</TextView>
+		<Button 
+				android:id="@+id/add_new_album_mode" 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:background="@drawable/addalbums"
+						
+			/>
+		
+		
+		
+ </LinearLayout>
+    	
+    
+</RelativeLayout>
