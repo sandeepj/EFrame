@@ -419,7 +419,16 @@ finish();
                 
                 ImageView iv = (ImageView)v.findViewById(R.id.icon_image1);
                 Bitmap bMap = BitmapFactory.decodeFile(image);
-                iv.setImageBitmap(bMap);
+                if(bMap!=null)	     
+                {
+                	Bitmap newImage = Bitmap.createScaledBitmap(bMap, 80, 80, true);
+                    iv.setImageBitmap(newImage);
+                }
+                else
+                {
+                	iv.setImageResource(R.drawable.icon);
+                }
+
                                
                 final CheckBox check1 = (CheckBox)v.findViewById(R.id.check1);
                 

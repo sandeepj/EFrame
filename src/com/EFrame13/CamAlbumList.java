@@ -202,10 +202,15 @@ public class CamAlbumList extends Activity{
 		                {
 		                
 		                Bitmap bMap = BitmapFactory.decodeFile(album_covers[position]);
-		                if(bMap!=null)		                
-		                	iv.setImageBitmap(bMap);
-		                else
-		                	iv.setImageResource(R.drawable.moved_photo);
+		                if(bMap!=null)	     
+	                    {
+	                    	Bitmap newImage = Bitmap.createScaledBitmap(bMap, 80, 80, true);
+	                        iv.setImageBitmap(newImage);
+	                    }
+	                    else
+	                    {
+	                    	iv.setImageResource(R.drawable.icon);  
+	                    }
 		                }
 		                else
 		                {

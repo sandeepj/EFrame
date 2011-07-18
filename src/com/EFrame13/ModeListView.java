@@ -259,10 +259,16 @@ finish();
 		                if(!(album_covers[position].equals("")))
 		                {
 		                	Bitmap bMap = BitmapFactory.decodeFile(album_covers[position]);
-		                	if(bMap!=null)		                
-		                		iv.setImageBitmap(bMap);
-		                	else
-		                		iv.setImageResource(R.drawable.moved_photo);
+		                	if(bMap!=null)	     
+		                    {
+		                    	Bitmap newImage = Bitmap.createScaledBitmap(bMap, 80, 80, true);
+		                        iv.setImageBitmap(newImage);
+		                    }
+		                    else
+		                    {
+		                    	iv.setImageResource(R.drawable.icon);
+		                    }
+
 		                }
 		                else
 		                {
@@ -270,13 +276,13 @@ finish();
 		                }
 		               }
 		               catch(Exception e)
-		           		{
+		           	{
 		           		Runtime rt = Runtime.getRuntime();
 		           		Toast toast = Toast.makeText(ModeListView.this, 
 		                   		"\nProblem inattaching images..\nFree memo: "+rt.freeMemory(),
 		                   		Toast.LENGTH_LONG);
-		                toast.show();
-		           		}
+		                   toast.show();
+		           	}
 		                iv.setOnClickListener(new Button.OnClickListener() 
 		        		{ public void onClick (View v)
 		        			{ 

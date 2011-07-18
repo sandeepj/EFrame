@@ -100,7 +100,7 @@ public class home extends Activity {
 					dialog2.setCancelable(true);
 
 					TextView viewDetailsDialog = (TextView) dialog2.findViewById(R.id.viewDetailsDialog);
-					viewDetailsDialog.setText("\nSorry Elite PictureFrameID is not specified.. \n");
+					viewDetailsDialog.setText("\nSorry Elite PictureFrameID is not specified.. \n\n\n*Note: Alloted while registration");
 							
 									
 					 Button ok = (Button) dialog2.findViewById(R.id.ok);
@@ -173,7 +173,7 @@ public class home extends Activity {
    					dialog2.setCancelable(true);
 
    					TextView viewDetailsDialog = (TextView) dialog2.findViewById(R.id.viewDetailsDialog);
-   					viewDetailsDialog.setText("\nSorry Elite PictureFrameID is not specified.. \n");
+   					viewDetailsDialog.setText("\nSorry Elite PictureFrameID is not specified.. \n\n\n*Note: Alloted while registration");
    							
    					   					
    					 Button ok = (Button) dialog2.findViewById(R.id.ok);

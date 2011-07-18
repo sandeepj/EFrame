@@ -155,19 +155,23 @@ public class DeleteAlbums extends Activity{
              v = li.inflate(R.layout.delete_albums_row, null);
               
              // Binding album covers with album names to display...
-             
+             ImageView iv = (ImageView)v.findViewById(R.id.icon_image1);
              if(!(album_covers[position].equals("")))
              {
-            	 ImageView iv = (ImageView)v.findViewById(R.id.icon_image1);
+            	// ImageView iv = (ImageView)v.findViewById(R.id.icon_image1);
             	 Bitmap bMap = BitmapFactory.decodeFile(album_covers[position]);
-            	 if(bMap!=null)		                
-            		 iv.setImageBitmap(bMap);
+            	 if(bMap!=null)		       
+            	 {
+            		 Bitmap newImage = Bitmap.createScaledBitmap(bMap, 80, 80, true);
+                     iv.setImageBitmap(newImage);
+            		// iv.setImageBitmap(bMap);
+            	 }
             	 else
             		 iv.setImageResource(R.drawable.moved_photo);
              }
              else
              {
-             	ImageView iv = (ImageView)v.findViewById(R.id.icon_image1);
+             	
 	                iv.setImageResource(R.drawable.default_a);
              }
              
